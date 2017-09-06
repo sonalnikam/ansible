@@ -1,5 +1,6 @@
 ---
 - hosts : 192.168.1.143
+  sudo : yes
   tasks :
    - name : install nginx
      yum : pkg=nginx state=installed
